@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Waves]
+(
+	Id int NOT NULL 
+		CONSTRAINT PK_Waves_Id 
+		PRIMARY KEY IDENTITY(1,1),
+	Name VARCHAR(255) NOT NULL
+)

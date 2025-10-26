@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Abstractions\**" />
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Tests\**" />
+    <EmbeddedResource Remove="Abstractions\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Tests\**" />
+    <None Remove="Abstractions\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cross\Logic\Cross.Logic.csproj" />
+    <ProjectReference Include="..\Resources\Abstractions\Resources.Abstractions.csproj" />
+    <ProjectReference Include="Abstractions\Business.Abstractions.csproj" />
+    <ProjectReference Include="Entities\Business.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Business\**" />
+    <Compile Remove="Cross\**" />
+    <Compile Remove="Docs\**" />
+    <Compile Remove="Resources\**" />
+    <Content Remove="Business\**" />
+    <Content Remove="Cross\**" />
+    <Content Remove="Docs\**" />
+    <Content Remove="Resources\**" />
+    <EmbeddedResource Remove="Business\**" />
+    <EmbeddedResource Remove="Cross\**" />
+    <EmbeddedResource Remove="Docs\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Business\**" />
+    <None Remove="Cross\**" />
+    <None Remove="Docs\**" />
+    <None Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".editorconfig" />
+    <None Remove=".gitignore" />
+    <None Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<None Include="app.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="Business\Business.csproj" />
+    <ProjectReference Include="Resources\Resources.csproj" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="E:\Documentos\Proyects\EveApp\API\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="E:\Documentos\Proyects\EveApp\API\.editorconfig" />
+  </ItemGroup>
+
+</Project>

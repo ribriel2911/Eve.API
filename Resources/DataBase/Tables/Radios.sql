@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Radios]
+(
+	Id int NOT NULL 
+		CONSTRAINT PK_Radios_Id 
+		PRIMARY KEY IDENTITY(1,1),
+	Frequency DECIMAL(5,1) NULL,
+	WaveId INT NOT NULL
+		CONSTRAINT FK_Radios_Waves_WaveId
+		FOREIGN KEY REFERENCES dbo.Waves(Id)
+)

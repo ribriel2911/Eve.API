@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Business.Abstractions.Entities\**" />
+    <EmbeddedResource Remove="Business.Abstractions.Entities\**" />
+    <None Remove="Business.Abstractions.Entities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Resources\Abstractions\Entities\Resources.Abstractions.Entities.csproj" />
+    <ProjectReference Include="Business.Abstractions.Entities\Business.Abstractions.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

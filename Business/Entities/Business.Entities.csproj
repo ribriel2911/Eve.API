@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Base\**" />
+    <Compile Remove="Interfaces\**" />
+    <Compile Remove="Tests\**" />
+    <EmbeddedResource Remove="Base\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <EmbeddedResource Remove="Tests\**" />
+    <None Remove="Base\**" />
+    <None Remove="Interfaces\**" />
+    <None Remove="Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Cross\Entities\Cross.Entities.csproj" />
+    <ProjectReference Include="..\..\Resources\Abstractions\Entities\Resources.Abstractions.Entities.csproj" />
+    <ProjectReference Include="..\Abstractions\Business.Abstractions.Entities\Business.Abstractions.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
